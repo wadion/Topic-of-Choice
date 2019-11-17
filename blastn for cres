@@ -1,0 +1,43 @@
+##gut spot cre
+
+#Code for blast of def scaffolds against gut spot cre
+  makeblastdb -in gut_spot_cre.fasta -dbtype nucl -title gut_spot
+  blastn -db gut_spot_cre.fasta -query DefHb_final_scaffolds.fasta -out gut_def_spot.txt
+    hit on scaffold46.1 *** ctrl+f "Score" ***
+#Code for blast of pal scaffolds against gut spot cre
+  makeblastdb -in gut_spot_cre.fasta -dbtype nucl -title gut_spot
+  blastn -db gut_spot_cre.fasta -query pal_2_asm.contigs.fasta -out gut_pal_spot.txt
+    no hits on *** ctrl+f "Score" ***
+#Code for blast of sub scaffolds against gut spot cre
+  makeblastdb -in gut_spot_cre.fasta -dbtype nucl
+  blastn -db gut_spot_cre.fasta -query sub_1_asm.contigs.fasta -out gut_sub_spot.txt
+    no hits on *** ctrl+f "Score" ***
+#Code to make sure that the blastn is working -- blast the gut spot cre against the gut genome to verify a match -- spot_confirm
+  makeblastdb -in gut_spot_cre.fasta -dbtype nucl
+  blastn -db gut_spot_cre.fasta -query GutG_final_scaffolds.fasta -out gut_gut_spot.txt
+     96% identity at scaffold293.1 *** ctrl+f "Score" *** --- so we are good
+
+------------------> Do I need an outgroup?          mel????willistoni????
+  
+##gut stripe cre
+
+#Code for blast of def scaffolds against gut stripe cre
+  makeblastdb -in gut_stripe_cre.fasta -dbtype nucl
+  blastn -db gut_stripe_cre.fasta -query DefHb_final_scaffolds.fasta -out gut_def_stripe.txt
+    SEVERAL HITS *** ctrl+f "Score" ***
+#Code for blast of pal scaffolds against gut stripe cre
+  makeblastdb -in gut_stripe_cre.fasta -dbtype nucl
+  blastn -db gut_stripe_cre.fasta -query pal_2_asm.contigs.fasta -out gut_pal_stripe.txt
+    SEVERAL HITS *** ctrl+f "Score" ***
+#Code for blast of sub scaffolds against gut stripe cre
+  makeblastdb -in gut_stripe_cre.fasta -dbtype nucl
+  blastn -db gut_stripe_cre.fasta -query sub_1_asm.contigs.fasta -out gut_sub_stripe.txt
+    SEVERAL HITS *** ctrl+f "Score" ***
+#Code to make sure that the blastn is working -- blast the gut stripe cre against the gut genome to verify a match -- stripe_confirm
+  makeblastdb -in gut_stripe_cre.fasta -dbtype nucl
+  blastn -db gut_stripe_cre.fasta -query GutG_final_scaffolds.fasta -out gut_gut_stripe.txt
+
+
+
+ 
+   
