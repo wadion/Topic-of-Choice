@@ -1,0 +1,6 @@
+#Code to for blast of def scaffolds against gut cres
+  gut spot cre
+    makeblastdb -in gut_spot_cre.fasta -dbtype nucl -title gut_spot
+    blastn -db gut_spot_cre.fasta -query DefHb_final_scaffolds.fasta -out gut_def_spot.txt
+      ***no matches
+  gut stripe cre
