@@ -42,8 +42,21 @@
   
 ##gut wb cre
 
-
-
-
+#Code for blast of def scaffolds against gut wb cre
+  makeblastdb -in gut_wb_cre.fasta -dbtype nucl
+  blastn -db gut_wb_cre.fasta -query DefHb_final_scaffolds.fasta -out gut_def_wb.txt
+    Few hits *** ctrl+f "Score" ***
+#Code for blast of pal scaffolds against gut wb cre
+  makeblastdb -in gut_wb_cre.fasta -dbtype nucl
+  blastn -db gut_wb_cre.fasta -query pal_2_asm.contigs.fasta -out gut_pal_wb.txt
+    ONE HIT FOUND *** ctrl+f "Score" ***
+#Code for blast of sub scaffolds against gut wb cre
+  makeblastdb -in gut_wb_cre.fasta -dbtype nucl
+  blastn -db gut_wb_cre.fasta -query sub_1_asm.contigs.fasta -out gut_sub_wb.txt
+    no hits *** ctrl+f "Score" ***
+#Code to make sure that the blastn is working -- blast the gut wb cre against the gut genome to verify a match -- wb_confirm
+  makeblastdb -in gut_stripe_cre.fasta -dbtype nucl
+  blastn -db gut_stripe_cre.fasta -query GutG_final_scaffolds.fasta -out gut_gut_stripe.txt
+    LOTS of HITS *** ctrl+f "Score" ***
  
    
