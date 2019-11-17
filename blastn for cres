@@ -36,6 +36,12 @@
 #Code to make sure that the blastn is working -- blast the gut stripe cre against the gut genome to verify a match -- stripe_confirm
   makeblastdb -in gut_stripe_cre.fasta -dbtype nucl
   blastn -db gut_stripe_cre.fasta -query GutG_final_scaffolds.fasta -out gut_gut_stripe.txt
+    LOTS of HITS *** ctrl+f "Score" ***
+
+------------------> Do I need an outgroup?          mel????willistoni????
+  
+##gut wb cre
+
 
 
 
