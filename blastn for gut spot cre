@@ -12,6 +12,17 @@
     no hits on *** ctrl+f "Score" ***
 #Code to make sure that the blastn is working -- blast the gut spot cre against the gut genome to verify a match -- spot_confirm
   makeblastdb -in gut_spot_cre.fasta -dbtype nucl
-   blastn -db gut_spot_cre.fasta -query GutG_final_scaffolds.fasta -out gut_sub_spot.txt
+  blastn -db gut_spot_cre.fasta -query GutG_final_scaffolds.fasta -out gut_sub_spot.txt
      96% identity at scaffold293.1 *** ctrl+f "Score" *** --- so we are good
-#
+
+mel????
+willistoni????
+  
+
+
+
+
+
+
+ 
+   
