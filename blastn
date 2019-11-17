@@ -1,6 +1,9 @@
-#Code to for blast of def scaffolds against gut cres
-  gut spot cre
-    makeblastdb -in gut_spot_cre.fasta -dbtype nucl -title gut_spot
-    blastn -db gut_spot_cre.fasta -query DefHb_final_scaffolds.fasta -out gut_def_spot.txt
-      ***no matches
-  gut stripe cre
+#Code for blast of def scaffolds against gut spot cre
+  makeblastdb -in gut_spot_cre.fasta -dbtype nucl -title gut_spot
+  blastn -db gut_spot_cre.fasta -query DefHb_final_scaffolds.fasta -out gut_def_spot.txt
+    hit on scaffold46.1 ***ctrl+f "Score"***
+#Code for blast of pal scaffolds against gut spot cre
+  makeblastdb -in gut_spot_cre.fasta -dbtype nucl -title gut_spot
+   blastn -db gut_spot_cre.fasta -query pal_2_asm.contigs.fasta -out gut_pal_spot.txt
+   
+  
