@@ -59,4 +59,4 @@
   blastn -db gut_wb_cre.fasta -query GutG_final_scaffolds.fasta -out gut_gut_wb.txt
     ONE HIT FOUND*** ctrl+f "Score" ***
  
-   
+------------------> Do I need an outgroup?          mel????willistoni????
