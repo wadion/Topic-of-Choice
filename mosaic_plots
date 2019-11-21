@@ -1,0 +1,14 @@
+data <- read.csv("H:/Topic_of_choice/data.csv", sep = ',', header = T)
+summary(data)
+
+"BLAST Hits for CREs" <- table(data$ï..Species, data$gut_CRE_BLASTed_against)
+`BLAST Hits for CREs`
+mosaicplot(`BLAST Hits for CREs`)
+
+"% Identities" <-table(data$ï..Species, data$X.Identity)
+`% Identities`
+ mosaicplot(`% Identities`)
+
+"% Gaps" <-table(data$ï..Species, data$X.Gap)
+`% Gaps`
+mosaicplot(`% Gaps`)
