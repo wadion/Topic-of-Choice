@@ -1,4 +1,6 @@
-data <- read.csv("H:/Topic_of_choice/data.csv", sep = ',', header = T)
+#Download the Topic of Choice repository from Github and move the folder to the H: Drive
+
+data <- read.csv("H:/Topic-of-choice-master/data.csv", sep = ',', header = T)
 summary(data)
 
 "BLAST Hits for CREs" <- table(data$ï..Species, data$gut_CRE_BLASTed_against)
