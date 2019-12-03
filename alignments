@@ -1,6 +1,0 @@
-#D. palustris alignments
-  #pull out contig pal_00000673
-    grep -A1970 ">tig00000673" pal_2_asm.contigs.fasta > pal_tig00000673
-  #check to make sure I didn't pull out the next contig too
-   tail pal_tig00000673
-  
