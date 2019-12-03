@@ -73,6 +73,19 @@ Code to make sure that the blastn is working -- blast the gut wb cre against the
   check to make sure I didn't pull out the next contig too
    tail pal_tig00000673
    
-
+##RStudio code to generate mosaic plots
+#note that this data is available in this repository as "data.csv"
+#Download the Topic of Choice repository from Github and move the folder to the H: Drive
+data <- read.csv("H:/Topic-of-choice-master/data.csv", sep = ',', header = T)
+   summary(data)
+"BLAST Hits for cis-regualtory elements" <- table(data$Species, data$gut_CRE_BLASTed_against)
+ `BLAST Hits for cis-regualtory elements`
+   mosaicplot(`BLAST Hits for cis-regualtory elements`)
+"Percent identities for BLAST hits" <-table(data$Species, data$X.Identity)
+ `Percent identities for BLAST hits`
+   mosaicplot(`Percent identities for BLAST hits`)
+"Lengths for BLAST hits" <-table(data$Species, data$Length)
+ `Lengths for BLAST hits`
+  mosaicplot(`Lengths for BLAST hits`)
 
 
