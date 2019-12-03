@@ -1,4 +1,0 @@
-#Download the melanogaster genome
-  efetch -db=sequences -id=NC_004354.4 -format=fasta>mel.fasta
-#Download the willistoni genome
-  efetch -db=sequences -id=NW_002032893 -format=fasta>will.fasta
