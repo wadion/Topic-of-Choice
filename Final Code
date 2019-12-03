@@ -1,9 +1,17 @@
 ##Download genomes
-
-
+#D.guttifera (specific genome assembly unknown)
+Information is available at https://drive.google.com/drive/u/0/folders/1xZCsC0LrMf23jx_WDgeHgmbIJJVVqCWQ
+#D.deflecta genome (Hb)
+Information is available at https://drive.google.com/drive/u/0/folders/1GvHtrf0qZVVG4r9EivbIvIE48JfAofMa
+Shareable link: https://drive.google.com/open?id=1DkNazQSf9Cet-vhmH4uUwFe2t2h1LOjG
+#D.palustris genome
+Information: https://drive.google.com/drive/u/0/folders/1zUG63DABQ6Yl0ZVOhiU9CtIo7QpqFiPv
+Sharable link: https://drive.google.com/open?id=1LNpoHrGuq8AmkoLYVnoMcua5NRi6xtt2
+#D.subpalustris genome
+Information: https://drive.google.com/drive/u/0/folders/15trlJTnXkhiSiW9Z9t8tUBS-pOGPGJVi
+Sharable link: https://drive.google.com/open?id=1ivhp9t3JE_vwScZrpknfDQhLC08YM5Aq
 
 ##BLAST the D.guttifera Spot, Stripe, and Wing-body cis-regulatory elements (CREs) against the genomes of D.deflecta, D.palustris, and D. subpalustris
-
 #gut spot cre
 Code for blast of def scaffolds against gut spot cre
  makeblastdb -in gut_spot_cre.fasta -dbtype nucl -title gut_spot
