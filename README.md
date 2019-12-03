@@ -1,3 +1,3 @@
 # Topic-of-Choice
 
-#Data for GenePalette can be found in the folder "Gene Palette Data"
+1. Data for GenePalette can be found in the folder "Gene Palette Data"
