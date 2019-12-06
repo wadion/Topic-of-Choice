@@ -72,7 +72,29 @@ Code to make sure that the blastn is working -- blast the gut wb cre against the
    grep -A1970 ">tig00000673" pal_2_asm.contigs.fasta > pal_tig00000673
   check to make sure I didn't pull out the next contig too
    tail pal_tig00000673
-   
+#Other checks for yellow alignment - Note that all alignments for D.deflecta were done on the local BLAST station, not on Colossus
+ grep -A1260 ">tig00001002" pal_2_asm.contigs.fasta > pal_tig00001002
+ grep -A1607 ">tig00001098" pal_2_asm.contigs.fasta > pal_tig00001098
+ grep -A1065 ">tig00001339" pal_2_asm.contigs.fasta > pal_tig00001339
+ grep -A124 ">tig00004355" pal_2_asm.contigs.fasta > pal_tig00004355
+ grep -A466 ">tig00008089" pal_2_asm.contigs.fasta > pal_tig00008089
+ grep -A86 ">tig00008137" pal_2_asm.contigs.fasta > pal_tig00008137
+ grep -A801 ">tig00073903" pal_2_asm.contigs.fasta > pal_tig00073903
+ grep -A878 ">tig00001607" pal_2_asm.contigs.fasta > pal_tig0001607
+ grep -A1700 ">tig00000086" sub_1_asm.contigs.fasta > sub_tig00000086
+ grep -A546 ">tig00000324" sub_1_asm.contigs.fasta > sub_tig00000324
+ grep -A556 ">tig00000749" sub_1_asm.contigs.fasta > sub_tig00000749
+ grep -A361 ">tig00001663" sub_1_asm.contigs.fasta > sub_tig00001663
+ grep -A165 ">tig00002127" sub_1_asm.contigs.fasta > sub_tig00002127
+ grep -A453 ">tig00002621" sub_1_asm.contigs.fasta > sub_tig00002621
+ grep -A277 ">tig00004669" sub_1_asm.contigs.fasta > sub_tig00004669
+ grep -A149 ">tig00004773" sub_1_asm.contigs.fasta > sub_tig00004773
+ grep -A546 ">tig00012730" sub_1_asm.contigs.fasta > sub_tig00012730
+ grep -A151 ">tig00012751" sub_1_asm.contigs.fasta > sub_tig00012751
+ grep -A377 ">tig00012769" sub_1_asm.contigs.fasta > sub_tig00012769
+ grep -A326 ">tig00013149" sub_1_asm.contigs.fasta > sub_tig00013149
+ grep -A94 ">tig00013414" sub_1_asm.contigs.fasta > sub_tig00013414 
+ 
 ##RStudio code to generate mosaic plots
 #note that this data is available in this repository as "data.csv"
 #Download the Topic of Choice repository from Github and move the folder to the H: Drive
